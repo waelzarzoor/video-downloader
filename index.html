@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمل الفيديو - تحميل من أي منصة</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📥 محمل الفيديو</h1>
+            <p>حمل الفيديو من YouTube, TikTok, Instagram, Facebook وأكثر...</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <input 
+                    type="url" 
+                    id="videoUrl" 
+                    placeholder="الصق رابط الفيديو هنا..."
+                    autocomplete="off"
+                >
+                <button id="downloadBtn" class="btn-primary">تحميل الفيديو</button>
+            </div>
+
+            <div id="loadingSpinner" class="spinner" style="display:none;"></div>
+
+            <div id="resultSection" class="result-section" style="display:none;">
+                <h2>خيارات التحميل</h2>
+                <div id="qualityOptions" class="quality-options"></div>
+                <button id="cancelBtn" class="btn-secondary">إلغاء</button>
+            </div>
+
+            <div id="errorMessage" class="error-message" style="display:none;"></div>
+            <div id="successMessage" class="success-message" style="display:none;"></div>
+        </main>
+
+        <footer>
+            <p>استخدم هذا الموقع بمسؤوليتك الخاصة وتأكد من احترام حقوق الملكية الفكرية</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
